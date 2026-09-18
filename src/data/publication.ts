@@ -73,8 +73,9 @@ export type OfficeBearer = {
 };
 
 export const officeBearers: OfficeBearer[] = [
-  { id: "editor-in-chief", name: "Name to be announced", designation: "Editor-in-Chief" },
-  { id: "managing-editor", name: "Name to be announced", designation: "Managing Editor" },
-  { id: "creative-director", name: "Name to be announced", designation: "Creative Director" },
-  { id: "faculty-advisor", name: "Name to be announced", designation: "Faculty Advisor" },
+  { id: "head-of-publication", name: "Mrithula Vijay", designation: "Head of Publication" },
+  { id: "associate-head", name: "V Nithin", designation: "Associate Head of Publication" },
+  { id: "chief-editor", name: "Evangeline", designation: "Chief Editor" },
+  { id: "content-editor", name: "Aashika", designation: "Content Editor" },
+  { id: "graphic-designer", name: "Nyrah Sara Sanoop", designation: "Graphic Designer" },
 ];
