@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import collegeLogo from "@/assets/college-logo.png.asset.json";
 
 const navItems = [
   ["About", "#about"],
@@ -14,9 +15,16 @@ export function SiteHeader() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-30 text-primary-foreground">
-      <div className="mx-auto flex max-w-[90rem] items-center justify-between border-b border-primary-foreground/25 px-5 py-5 sm:px-8 lg:px-12">
-        <a href="#top" className="font-display text-xl leading-none" aria-label="Paper and Pulse home">
-          Paper <span className="text-accent">&amp;</span> Pulse
+      <div className="mx-auto flex max-w-[90rem] items-center justify-between border-b border-primary-foreground/25 px-5 py-4 sm:px-8 lg:px-12">
+        <a href="#top" className="flex items-center gap-4" aria-label="Paper and Pulse home">
+          <img
+            src={collegeLogo.url}
+            alt="Easwari Engineering College"
+            className="h-11 w-auto rounded-sm object-contain sm:h-12"
+          />
+          <span className="hidden font-display text-xl leading-none sm:inline">
+            Paper <span className="text-accent">&</span> Pulse
+          </span>
         </a>
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Main navigation">
           {navItems.map(([label, href]) => (
